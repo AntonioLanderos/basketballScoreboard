@@ -1,0 +1,77 @@
+:root {
+    --background: rgba(27, 36, 74, 1);
+    --primary: rgba(154, 171, 216, 1);
+    --text: rgba(249, 79, 109, 1);
+    --scoreboard: rgba(8, 0, 1, 1);
+  }
+
+  @font-face {
+    font-family: "Cursed Timer ULiL";
+    src: url("./Fonts/CursedTimer.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+  body {
+    background-color: var(--background);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-scoreboard ,
+  .guest-scoreboard {
+    width: 8.75em;
+    background-color: var(--scoreboard);
+    margin: 1.25em auto;
+    border-radius: 5px;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 0.4em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .three-points-btn,
+  .two-points-btn,
+  .one-point-btn,
+  .reset-btn {
+    border: 0;
+    padding: 0.5625em;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-family: "Cursed Timer ULiL", sans-serif;
+  }
+
+  .reset-btn {
+    letter-spacing: 0.125em;
+  }
+
+  h2 {
+    font-family: "Cursed Timer ULiL", sans-serif;
+    font-size: 5.625rem;
+    text-align: center;
+    color: var(--text);
+    padding-top: 0.18em;
+  }
+  
+  h3 {
+    font-size: 2.5rem;
+    color: white; 
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .home,
+  .guest {
+    width: 18em;
+    padding: 1em;
+  }
